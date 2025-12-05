@@ -36,6 +36,9 @@ Our colors are white, dark grey, and teal
 External Services: Spotify API
 
 ###########
+```
+
+```
 
 Build a React SPA (PWA) with Radix UI, Tailwind, and Supabase (Auth, PostgREST, Storage).
 
@@ -125,3 +128,4 @@ Build the full project with this structure, using Supabase PostgREST for all CRU
 - You can leave lovable, make changes manually in cursor, push to main and return to lovable
 - If you make changes in lovable after local development, you need to pull these changes in your local environment
 - recommend creating dev and prod branches
+```
