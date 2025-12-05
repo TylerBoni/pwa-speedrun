@@ -1,22 +1,45 @@
-# 3. Google Cloud Console (OAuth)
+# 3. Google Cloud Console (OAuth Configuration)
 
-- https://console.cloud.google.com
-- New Project -> Your App
-- Select Project
-- Search -> Google Auth Platform → Get Started
-- App Info:
-    - Your App Name
-    - Audience:
-        - Internal - Only users with @yourdomain.com
-        - External - Only for testing until app is verified
-- Create OAuth Client
-    - Type: Web Application
-    - Name (optional): Supabase - not shown to end users
-    - #### Redirect URI: This will come from supabase on the next page.
-- Data Access (optional)
-    - These are the scopes that you want to use. For example, if you wanted to build an application that sent emails for the user, you could use the Gmail API in this tab.
+## Overview
+Configure OAuth 2.0 credentials in Google Cloud Console to enable authentication for your application.
 
-### Phase 2 - Supabase
-- Add Redirect URI
-- Copy Client ID
-- Copy Client Secret (if not available create a new secret)
+**Access:** https://console.cloud.google.com
+
+## Step 1: Create Project
+
+1. Navigate to **New Project**
+2. Enter your application name
+3. Click **Create** and select the newly created project
+
+## Step 2: Enable Google Authentication Platform
+
+1. Use the search bar to locate **Google Authentication Platform**
+2. Click **Get Started** to initialize the authentication service
+
+## Step 3: Configure Application Information
+
+### Application Details
+- **Application Name:** Enter your application name
+
+### Audience Selection
+Choose the appropriate audience type for your use case:
+
+- **Internal:** Restricted to users with email addresses from your domain (e.g., @yourdomain.com). Recommended for internal company tools and applications.
+- **External (Recommended):** Suitable for public-facing applications. Note: Applications remain in testing mode until verified by Google.
+
+## Step 4: Create OAuth 2.0 Client
+
+1. Click **Create OAuth Client**
+2. Configure the following settings:
+   - **Application Type:** Web Application
+   - **Name (Optional):** Enter a descriptive name (e.g., "Supabase Integration"). This name is not displayed to end users.
+3. Click **Create**
+
+## Step 5: Configure Supabase Integration
+
+After creating the OAuth client, proceed to configure the integration in Supabase:
+
+1. **Add Redirect URI:** Copy the authorized redirect URI from Supabase and add it to your OAuth client configuration
+2. **Copy Client ID:** Retrieve the OAuth Client ID from Google Cloud Console
+3. **Copy Client Secret:** Retrieve the OAuth Client Secret. If a secret is not visible, create a new one from the credentials management page
+4. Enter these credentials in your Supabase project settings
