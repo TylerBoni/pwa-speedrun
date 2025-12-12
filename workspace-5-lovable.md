@@ -111,6 +111,10 @@ Create 5 items for every table necessary to seed in a separate migration SQL fil
 Build the full project with this structure, using Supabase PostgREST for all CRUD, Radix for UI, Tailwind for styling, and React Query for data. Keep everything tenant-aware and offline-ready.
 ```
 
+## Building
+- If asked to enable Lovable Cloud
+- Need to review these because it asks a lot of questions
+
 ## Preview
 - OAuth doesn't work well in the preview pane
 - "Open Preview In New Tab" button is the diagonal arrow next to the refresh button in the preview menu bar on top
@@ -124,6 +128,7 @@ Build the full project with this structure, using Supabase PostgREST for all CRU
 
 ## Connect to Github
 - When ready to move to next phase, connect to github
+- Github icon in top nav bar -> Connect to githy
 - 2 way sync: Lovable will push to main branch, and also pull automatically
 - You can leave lovable, make changes manually in cursor, push to main and return to lovable
 - If you make changes in lovable after local development, you need to pull these changes in your local environment

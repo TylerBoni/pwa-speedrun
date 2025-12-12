@@ -3,6 +3,9 @@
 ## VSCode Fork - Familiar and extendable
 - If using vscode, you can import your extensions and settings
 
+## Repo
+- Clone repo
+
 ## Built-in terminal
 - control+` to open and close
 
